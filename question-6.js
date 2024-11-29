@@ -2,6 +2,7 @@
 
 function filterInStockProducts(products) {
   // เริ่มเขียนโค้ดตรงนี้
+  return products.filter((products) => products.quantity > 0);
 }
 
 // ตัวอย่างการใช้งาน
@@ -11,6 +12,6 @@ const products = [
   { name: "orange", quantity: 5 },
 ];
 
-console.log(filterInStockProducts(products));
+console.log(filterInStockProducts(products)); //[ { name: 'apple', quantity: 2 }, { name: 'orange', quantity: 5 } ]
 // ผลลัพธ์ที่ได้จากการ Execute Function คือ
 // [{ name: "apple", quantity: 2 }, { name: "orange", quantity: 5 }]

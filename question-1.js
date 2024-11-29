@@ -8,8 +8,6 @@ const inventory = {
 // เริ่มเขียนโค้ดตรงนี้
 inventory.apple.quantity = 200;
 inventory.orange = { price: 20, quantity: 300 };
-console.log(inventory);
-
 
 let totalPrice = 0;
 for (let key in inventory) {
